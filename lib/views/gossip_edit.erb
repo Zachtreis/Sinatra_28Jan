@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Edit Gossip</title>
+  </head>
+  <body>
+    <h1>EDITE TON POTIN</h1>
+    <p>Tu veux changer le potin numero <%= edit[1] %> : <%= edit[0] %></p>
+    <p> Ton nouveau potin</p>
+    <form action='/gossips/edit/<%= edit[1] %>/' method='POST'>
+    <input type='text' name='new_gossip_content'/><br/>
+    <input type='submit'/>
+    </form>
+  </body>
+</html>
